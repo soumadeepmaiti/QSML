@@ -409,16 +409,5 @@ If you use this project in academic research, please cite:
 - Hull, J. C. (2017). Options, Futures, and Other Derivatives
 - Wilmott, P. (2006). Paul Wilmott Introduces Quantitative Finance
 
-## 📞 Support and Contact
 
-- **Issues**: [GitHub Issues](https://github.com/yourusername/quant-sv-ml/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/yourusername/quant-sv-ml/discussions)
-- **Email**: your.email@domain.com
-
----
-
-## 🌟 Acknowledgments
-
-This project builds upon decades of research in quantitative finance and represents the integration of classical mathematical finance with modern machine learning techniques. Special thanks to the open-source community for providing the foundational tools that make this research possible.
-
-**⭐ Star this repository if you find it useful for your research or work!**
+⭐ Star this repository if you find it useful for your research or work!**
