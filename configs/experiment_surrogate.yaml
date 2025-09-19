@@ -1,0 +1,26 @@
+# Config for surrogate experiments
+surrogate:
+  input_scaling: "standard"
+  layers: [512, 512, 512, 256]
+  activ: "silu" 
+  dropout: 0.1
+  lr: 5e-4
+  batch_size: 8192
+  epochs: 100
+  patience: 15
+  greek_loss_weights:
+    delta: 0.2
+    vega:  0.2
+    gamma: 0.1
+  arb_penalty: 0.05
+  monotonicity_penalty: 1e-2
+  convexity_penalty: 1e-2
+  
+training:
+  train_samples: 1000000
+  val_samples: 100000
+  test_samples: 50000
+  
+augment:
+  noise_level: 0.01
+  parameter_perturbation: 0.05

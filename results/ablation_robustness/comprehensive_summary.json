@@ -1,0 +1,42 @@
+{
+  "feature_ablation": {
+    "most_critical_feature": {
+      "name": "sqrt_time",
+      "impact": 0.5215447668529557
+    },
+    "least_critical_feature": {
+      "name": "intrinsic_value",
+      "impact": -4.896812016281625
+    },
+    "avg_feature_impact": -1.2242225773804394
+  },
+  "parameter_sensitivity": {
+    "bs_most_sensitive": "sigma",
+    "bs_max_change": 8.302368052113795,
+    "ml_most_sensitive": "max_depth",
+    "ml_max_change": 53.74620253685569
+  },
+  "stress_testing": {
+    "scenarios_tested": 5,
+    "worst_performance": {
+      "scenario": "market_crash",
+      "mae_ratio": 44.87077937874442,
+      "description": "Market Crash (-30% price, 2x volatility)"
+    },
+    "best_performance": {
+      "scenario": "volatility_spike",
+      "mae_ratio": 1.0,
+      "description": "Volatility Spike (3x volatility)"
+    },
+    "avg_mae_ratio": 22.444859127518953,
+    "robustness_score": 0.02228621864486059
+  },
+  "temporal_stability": {
+    "cv_splits": 3,
+    "avg_mae": 4.464663440973012,
+    "mae_std": 0.7922868183995097,
+    "avg_r2": 0.9591069805852209,
+    "r2_std": 0.01119403256151743,
+    "stability_coefficient": 0.8225427674730076
+  }
+}

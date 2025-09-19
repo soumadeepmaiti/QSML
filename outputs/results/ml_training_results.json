@@ -1,0 +1,99 @@
+{
+  "training_completed": true,
+  "models_trained": {
+    "price_prediction": [
+      "random_forest",
+      "gradient_boosting",
+      "svr",
+      "neural_network"
+    ],
+    "iv_prediction": [
+      "random_forest",
+      "gradient_boosting",
+      "svr",
+      "neural_network"
+    ]
+  },
+  "best_models": {
+    "price_prediction": {
+      "model": "gradient_boosting",
+      "performance": {
+        "mae": 1.9826027740360364,
+        "rmse": 2.6353481851974507,
+        "r2": 0.9900831206292323,
+        "mape": 6.025952649861567
+      }
+    },
+    "iv_prediction": {
+      "model": "gradient_boosting",
+      "performance": {
+        "mae": 0.03488292012358432,
+        "rmse": 0.05082627054241309,
+        "r2": 0.9916950713655074,
+        "mape": 2.6820692732006672
+      }
+    }
+  },
+  "all_model_performance": {
+    "price_prediction": [
+      {
+        "Model": "random_forest",
+        "MAE": 2.5938140594913714,
+        "RMSE": 3.334094529059944,
+        "R\u00b2": 0.9841271525405872,
+        "MAPE": 7.735560088102296
+      },
+      {
+        "Model": "gradient_boosting",
+        "MAE": 1.9826027740360364,
+        "RMSE": 2.6353481851974507,
+        "R\u00b2": 0.9900831206292323,
+        "MAPE": 6.025952649861567
+      },
+      {
+        "Model": "svr",
+        "MAE": 2.288023555568869,
+        "RMSE": 3.1442073487456437,
+        "R\u00b2": 0.9858836836747026,
+        "MAPE": 7.1936501656298155
+      },
+      {
+        "Model": "neural_network",
+        "MAE": 2.1613338033169445,
+        "RMSE": 2.8235964880316975,
+        "R\u00b2": 0.988615753496887,
+        "MAPE": 6.626966890521812
+      }
+    ],
+    "iv_prediction": [
+      {
+        "Model": "random_forest",
+        "MAE": 0.04293802735302905,
+        "RMSE": 0.06392334857337496,
+        "R\u00b2": 0.9868635368671292,
+        "MAPE": 3.2484938009847717
+      },
+      {
+        "Model": "gradient_boosting",
+        "MAE": 0.03488292012358432,
+        "RMSE": 0.05082627054241309,
+        "R\u00b2": 0.9916950713655074,
+        "MAPE": 2.6820692732006672
+      },
+      {
+        "Model": "svr",
+        "MAE": 0.03766040218919005,
+        "RMSE": 0.04855008075633188,
+        "R\u00b2": 0.992422266449914,
+        "MAPE": 3.1644411551357625
+      },
+      {
+        "Model": "neural_network",
+        "MAE": 0.07542046470835022,
+        "RMSE": 0.11993349019801011,
+        "R\u00b2": 0.9537576004520185,
+        "MAPE": 5.937944819674276
+      }
+    ]
+  }
+}

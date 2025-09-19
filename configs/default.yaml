@@ -1,0 +1,71 @@
+paths:
+  raw_equities: "data/raw/equities"
+  raw_options: "data/raw/options"
+  external: "data/external"
+  processed: "data/processed"
+  outputs: "outputs"
+  figures: "figures"
+
+underlying: "SPY"
+riskfree:
+  mode: "constant"         # constant | daily
+  constant_rate: 0.02
+dividends:
+  mode: "constant"         # constant | daily
+  constant_yield: 0.0125
+
+filters:
+  min_days_to_expiry: 5
+  max_log_moneyness_abs: 1.5
+  min_open_interest: 10
+  min_volume: 1
+  max_bid_ask_spread_pct: 0.5
+
+heston:
+  fft:
+    alpha: 1.5
+    N: 4096
+    eta: 0.025
+  bounds:
+    kappa: [0.01, 10.0]
+    theta: [1e-5, 2.0]
+    sigma: [1e-4, 5.0]
+    rho:   [-0.999, 0.999]
+    v0:    [1e-6, 2.0]
+  penalties:
+    feller_weight: 10.0
+    bound_weight:  1.0
+  optimizer:
+    method: "lbfgsb"     # "cmaes" then "lbfgsb" is also supported
+    restarts: 10
+    tol: 1e-6
+
+surrogate:
+  input_scaling: "standard"
+  layers: [256, 256, 256]
+  activ: "silu"
+  dropout: 0.0
+  lr: 1e-3
+  batch_size: 4096
+  epochs: 50
+  patience: 10
+  greek_loss_weights:
+    delta: 0.1
+    vega:  0.1
+  arb_penalty: 0.01
+  monotonicity_penalty: 1e-3
+  convexity_penalty: 1e-3
+
+hedging:
+  rebalance_days: 1
+  transaction_cost_bps: 1.0
+  test_strikes: ["ATM", "OTM-10", "ITM-10"]
+  horizon_days: 20
+  method_compare: ["bs", "heston", "surrogate"]
+  portfolio_size: 100000.0  # nominal portfolio size
+
+logging:
+  level: "INFO"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  
+random_seed: 42

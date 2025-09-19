@@ -1,0 +1,24 @@
+{
+  "best_price_model": {
+    "name": "gradient_boosting",
+    "mae": 1.9826027740360364,
+    "rmse": 2.6353481851974507,
+    "r2": 0.9900831206292323,
+    "mape": 6.025952649861567
+  },
+  "best_iv_model": {
+    "name": "gradient_boosting",
+    "mae": 0.03488292012358432,
+    "rmse": 0.05082627054241309,
+    "r2": 0.9916950713655074,
+    "mape": 2.6820692732006672
+  },
+  "training_info": {
+    "price_training_samples": 563,
+    "price_test_samples": 141,
+    "iv_training_samples": 563,
+    "iv_test_samples": 141,
+    "features_count_pricing": 11,
+    "features_count_iv": 12
+  }
+}

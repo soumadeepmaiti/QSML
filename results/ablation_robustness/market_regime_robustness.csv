@@ -1,0 +1,2 @@
+regime,samples,mae_within,mae_std,mae_cross_regime,robustness_ratio
+MediumVol_Sideways,704,3.6490675369237855,1.0488112609747051,,

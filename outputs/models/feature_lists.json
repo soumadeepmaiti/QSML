@@ -1,0 +1,29 @@
+{
+  "pricing_features": [
+    "moneyness",
+    "log_moneyness",
+    "T",
+    "sqrt_time",
+    "is_call",
+    "is_put",
+    "distance_from_atm",
+    "moneyness_time",
+    "log_moneyness_time",
+    "intrinsic_value",
+    "forward_moneyness"
+  ],
+  "volatility_features": [
+    "moneyness",
+    "log_moneyness",
+    "moneyness_squared",
+    "T",
+    "sqrt_time",
+    "time_squared",
+    "is_call",
+    "is_put",
+    "distance_from_atm",
+    "squared_distance_from_atm",
+    "moneyness_time",
+    "moneyness_sqrt_time"
+  ]
+}

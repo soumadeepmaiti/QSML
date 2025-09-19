@@ -1,0 +1,117 @@
+{
+  "backtest_completed": true,
+  "backtest_period_days": 60,
+  "strategies_tested": [
+    "Black-Scholes Daily",
+    "Black-Scholes Weekly"
+  ],
+  "performance_summary": [
+    {
+      "Strategy": "Black-Scholes Daily",
+      "Total P&L": -0.7450087233935467,
+      "Transaction Costs": 1.8553153144492225,
+      "Net P&L": -2.6003240378427694,
+      "Sharpe Ratio": -0.05380875489357003,
+      "Max Drawdown": -0.19848604499045175,
+      "Volatility": 0.23075820176532894
+    },
+    {
+      "Strategy": "Black-Scholes Weekly",
+      "Total P&L": -0.6537817968944493,
+      "Transaction Costs": 1.764088387950125,
+      "Net P&L": -2.417870184844574,
+      "Sharpe Ratio": -0.047232775368104454,
+      "Max Drawdown": -0.17315046571647486,
+      "Volatility": 0.23069495121399414
+    }
+  ],
+  "stress_test_results": [
+    {
+      "Scenario": "Market Crash (-20%)",
+      "Strategy": "Black-Scholes Daily",
+      "Stressed P&L": 1.4900174467870935,
+      "Max Drawdown": -1.9862257383900968,
+      "Volatility": 0.46151640353065787,
+      "95% VaR": -0.17564922613542705,
+      "95% CVaR": -0.23126733678746395
+    },
+    {
+      "Scenario": "Market Crash (-20%)",
+      "Strategy": "Black-Scholes Weekly",
+      "Stressed P&L": 1.3075635937888985,
+      "Max Drawdown": -2.1686795913882913,
+      "Volatility": 0.4613899024279883,
+      "95% VaR": -0.19970509026872102,
+      "95% CVaR": -0.24387302960174484
+    },
+    {
+      "Scenario": "High Volatility (+50%)",
+      "Strategy": "Black-Scholes Daily",
+      "Stressed P&L": -1.1175130850903205,
+      "Max Drawdown": -0.2977290674856774,
+      "Volatility": 0.34613730264799336,
+      "95% VaR": -0.0694371412229921,
+      "95% CVaR": -1.0026813822778096
+    },
+    {
+      "Scenario": "High Volatility (+50%)",
+      "Strategy": "Black-Scholes Weekly",
+      "Stressed P&L": -0.9806726953416741,
+      "Max Drawdown": -0.2597256985747123,
+      "Volatility": 0.3460424268209913,
+      "95% VaR": -0.041151258215046185,
+      "95% CVaR": -0.9900135926408212
+    },
+    {
+      "Scenario": "Increased Transaction Costs (3x)",
+      "Strategy": "Black-Scholes Daily",
+      "Stressed P&L": -4.455639352291992,
+      "Max Drawdown": -0.3370483206160424,
+      "Volatility": 0.6764601165668309,
+      "95% VaR": -0.0861108567103545,
+      "95% CVaR": -1.857795715784814
+    },
+    {
+      "Scenario": "Increased Transaction Costs (3x)",
+      "Strategy": "Black-Scholes Weekly",
+      "Stressed P&L": -4.1819585727946995,
+      "Max Drawdown": -0.18821039558008934,
+      "Volatility": 0.6766993500381714,
+      "95% VaR": -0.029539090694462665,
+      "95% CVaR": -1.8324601365108373
+    },
+    {
+      "Scenario": "Liquidity Crisis",
+      "Strategy": "Black-Scholes Daily",
+      "Stressed P&L": 1.1175130850903205,
+      "Max Drawdown": -1.4896693037925735,
+      "Volatility": 0.34613730264799336,
+      "95% VaR": -0.13173691960157027,
+      "95% CVaR": -0.173450502590598
+    },
+    {
+      "Scenario": "Liquidity Crisis",
+      "Strategy": "Black-Scholes Weekly",
+      "Stressed P&L": 0.9806726953416741,
+      "Max Drawdown": -1.626509693541219,
+      "Volatility": 0.3460424268209913,
+      "95% VaR": -0.14977881770154075,
+      "95% CVaR": -0.18290477220130863
+    }
+  ],
+  "portfolio_optimization": {
+    "optimal_weights": [
+      -0.49999999999999994,
+      1.4999999999999998
+    ],
+    "strategy_names": [
+      "Black-Scholes Daily",
+      "Black-Scholes Weekly"
+    ],
+    "portfolio_metrics": {
+      "return": -2.5543070013085813,
+      "volatility": 3.662244089372044,
+      "sharpe_ratio": -0.7056621399999873
+    }
+  }
+}

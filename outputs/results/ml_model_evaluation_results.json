@@ -1,0 +1,73 @@
+{
+  "speed_comparison": [
+    {
+      "Model": "Black Scholes",
+      "Time per Option (ms)": 0.05815528107411934,
+      "Options per Second": 17195.34290833351
+    },
+    {
+      "Model": "Ml Price Prediction",
+      "Time per Option (ms)": 0.003745610063726252,
+      "Options per Second": 266979.20578661846
+    },
+    {
+      "Model": "Ml Iv To Price",
+      "Time per Option (ms)": 0.004382296042008833,
+      "Options per Second": 228190.88222565688
+    },
+    {
+      "Model": "Ml Iv Prediction",
+      "Time per Option (ms)": 0.004382296042008833,
+      "Options per Second": 228190.88222565688
+    }
+  ],
+  "accuracy_comparison": [
+    {
+      "Model": "Black Scholes",
+      "MAE": 197.6522584026812,
+      "RMSE": 252.86145284517897,
+      "R\u00b2": -86.97792494827459,
+      "MAPE (%)": 628.1961148130197
+    },
+    {
+      "Model": "Ml Price Prediction",
+      "MAE": 0.6915849596979825,
+      "RMSE": 1.249713785219671,
+      "R\u00b2": 0.9978510338357839,
+      "MAPE (%)": 2.2560010250227984
+    },
+    {
+      "Model": "Ml Iv To Price",
+      "MAE": 199.2810552623383,
+      "RMSE": 283.0587117416197,
+      "R\u00b2": -109.24566163843126,
+      "MAPE (%)": 629.4773859982286
+    }
+  ],
+  "model_metadata": {
+    "best_price_model": {
+      "name": "gradient_boosting",
+      "mae": 1.9826027740360364,
+      "rmse": 2.6353481851974507,
+      "r2": 0.9900831206292323,
+      "mape": 6.025952649861567
+    },
+    "best_iv_model": {
+      "name": "gradient_boosting",
+      "mae": 0.03488292012358432,
+      "rmse": 0.05082627054241309,
+      "r2": 0.9916950713655074,
+      "mape": 2.6820692732006672
+    },
+    "training_info": {
+      "price_training_samples": 563,
+      "price_test_samples": 141,
+      "iv_training_samples": 563,
+      "iv_test_samples": 141,
+      "features_count_pricing": 11,
+      "features_count_iv": 12
+    }
+  },
+  "evaluation_date": "2025-09-20",
+  "test_dataset_size": 704
+}

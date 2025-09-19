@@ -1,0 +1,32 @@
+{
+  "model_name": "Black-Scholes Baseline",
+  "total_options": 704,
+  "calls": 352,
+  "puts": 352,
+  "performance_metrics": {
+    "MAE": 198.9022603370734,
+    "RMSE": 283.1610083804717,
+    "MAPE": 628.1895437406097,
+    "R2": -109.32536099437083,
+    "Rank_Correlation": 0.49533659152732057
+  },
+  "iv_statistics": {
+    "mean_iv": 1.1853526689514895,
+    "median_iv": 1.0472888441479635,
+    "std_iv": 0.48962876408180295,
+    "min_iv": 0.5517279348302576,
+    "max_iv": 3.910784784651367
+  },
+  "data_characteristics": {
+    "underlying_price": 793.4124226880745,
+    "risk_free_rate": 0.008871935256601168,
+    "dte_range": [
+      "45",
+      "349"
+    ],
+    "moneyness_range": [
+      1.6703419425012094,
+      2.4794138209002328
+    ]
+  }
+}
